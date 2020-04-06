@@ -1,8 +1,5 @@
 FROM node:alpine as builder
 
-ENV http_proxy http://10.125.115.11:3128
-ENV https_proxy http://10.125.115.11:3128
-
 WORKDIR /app
 COPY package.json .
 RUN npm install
